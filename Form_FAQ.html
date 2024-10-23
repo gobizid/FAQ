@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ GoBiz</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- FAQ Section -->
+  <div class="container mx-auto px-4 py-12">
+    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions - GoBiz</h2>
+
+    <div class="max-w-3xl mx-auto space-y-4">
+
+      <!-- Question 1 -->
+      <div class="bg-white border border-gray-200 rounded-md shadow-md">
+        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq1')">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-800 font-semibold">Apa itu GoBiz?</span>
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq1" class="hidden p-4 border-t border-gray-200">
+          <p class="text-gray-600">GoBiz adalah platform yang membantu pemilik usaha mengelola bisnis mereka, mulai dari menerima pesanan, mengatur stok, memproses pembayaran, hingga melihat laporan penjualan. GoBiz mempermudah operasional bisnis Anda.</p>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="bg-white border border-gray-200 rounded-md shadow-md">
+        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq2')">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-800 font-semibold">Bagaimana cara mendaftar di GoBiz?</span>
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq2" class="hidden p-4 border-t border-gray-200">
+          <p class="text-gray-600">Anda dapat mendaftar melalui aplikasi GoBiz yang tersedia di Google Play Store atau App Store. Ikuti petunjuk di aplikasi dan isi informasi bisnis Anda. Setelah itu, akun Anda akan diverifikasi.</p>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="bg-white border border-gray-200 rounded-md shadow-md">
+        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq3')">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-800 font-semibold">Apakah saya perlu membayar untuk menggunakan GoBiz?</span>
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq3" class="hidden p-4 border-t border-gray-200">
+          <p class="text-gray-600">GoBiz menawarkan berbagai paket layanan. Beberapa fitur dasar gratis, namun fitur tambahan seperti laporan lengkap atau pembayaran mungkin membutuhkan biaya bulanan atau biaya per transaksi.</p>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="bg-white border border-gray-200 rounded-md shadow-md">
+        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq4')">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-800 font-semibold">Bagaimana cara melacak pesanan di GoBiz?</span>
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq4" class="hidden p-4 border-t border-gray-200">
+          <p class="text-gray-600">Anda dapat melacak pesanan secara real-time melalui aplikasi GoBiz. Semua pesanan yang masuk akan terlihat di dashboard aplikasi, sehingga Anda bisa mengelola dan melacak status pesanan dengan mudah.</p>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="bg-white border border-gray-200 rounded-md shadow-md">
+        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq5')">
+          <div class="flex justify-between items-center">
+            <span class="text-gray-800 font-semibold">Apakah GoBiz terintegrasi dengan GoFood?</span>
+            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+        </button>
+        <div id="faq5" class="hidden p-4 border-t border-gray-200">
+          <p class="text-gray-600">Ya, GoBiz terintegrasi langsung dengan GoFood. Anda bisa mengelola menu, pesanan, dan pendapatan dari GoFood langsung melalui aplikasi GoBiz.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleFAQ(id) {
+      const faq = document.getElementById(id);
+      faq.classList.toggle('hidden');
+    }
+  </script>
+
+</body>
+</html>
