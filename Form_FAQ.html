@@ -5,36 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ GoBiz</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .rotate-180 {
+      transform: rotate(180deg);
+    }
+    .transition-transform {
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gradient-to-br from-blue-50 to-blue-100 font-sans">
 
   <!-- FAQ Section -->
   <div class="container mx-auto px-4 py-12">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions - GoBiz</h2>
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions - GoBiz</h2>
 
     <div class="max-w-3xl mx-auto space-y-4">
 
-      <!-- Question 1 -->
-      <div class="bg-white border border-gray-200 rounded-md shadow-md">
-        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq1')">
+      <!-- FAQ 1 -->
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
+        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq1')">
           <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold">Apa itu GoBiz?</span>
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span class="text-gray-800 font-semibold text-lg">Apa itu GoBiz?</span>
+            <svg id="icon-faq1" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
         </button>
         <div id="faq1" class="hidden p-4 border-t border-gray-200">
-          <p class="text-gray-600">GoBiz merupakan platform yang membantu pemilik usaha dalam mengelola bisnis mereka, mulai dari menerima pesanan, mengatur stok, memproses pembayaran, hingga melihat laporan penjualan. GoBiz mempermudah operasional bisnis Anda.</p>
+          <p class="text-gray-600">GoBiz adalah platform yang membantu pemilik usaha mengelola bisnis mereka, mulai dari menerima pesanan, mengatur stok, memproses pembayaran, hingga melihat laporan penjualan. GoBiz mempermudah operasional bisnis Anda.</p>
         </div>
       </div>
 
-      <!-- Question 2 -->
-      <div class="bg-white border border-gray-200 rounded-md shadow-md">
-        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq2')">
+      <!-- FAQ 2 -->
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
+        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq2')">
           <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold">Bagaimana cara mendaftar di GoBiz?</span>
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span class="text-gray-800 font-semibold text-lg">Bagaimana cara mendaftar di GoBiz?</span>
+            <svg id="icon-faq2" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
@@ -44,12 +52,12 @@
         </div>
       </div>
 
-      <!-- Question 3 -->
-      <div class="bg-white border border-gray-200 rounded-md shadow-md">
-        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq3')">
+      <!-- FAQ 3 -->
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
+        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq3')">
           <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold">Apakah saya perlu membayar untuk menggunakan GoBiz?</span>
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span class="text-gray-800 font-semibold text-lg">Apakah saya perlu membayar untuk menggunakan GoBiz?</span>
+            <svg id="icon-faq3" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
@@ -59,12 +67,12 @@
         </div>
       </div>
 
-      <!-- Question 4 -->
-      <div class="bg-white border border-gray-200 rounded-md shadow-md">
-        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq4')">
+      <!-- FAQ 4 -->
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
+        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq4')">
           <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold">Bagaimana cara melacak pesanan di GoBiz?</span>
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span class="text-gray-800 font-semibold text-lg">Bagaimana cara melacak pesanan di GoBiz?</span>
+            <svg id="icon-faq4" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
@@ -74,18 +82,18 @@
         </div>
       </div>
 
-      <!-- Question 5 -->
-      <div class="bg-white border border-gray-200 rounded-md shadow-md">
-        <button class="w-full text-left p-4 focus:outline-none" onclick="toggleFAQ('faq5')">
+      <!-- FAQ 5 -->
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
+        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq5')">
           <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold">Apakah GoBiz terintegrasi dengan Aplikasi Seperti GoFood, GRAB, ShopeeFood atau lainnya?</span>
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <span class="text-gray-800 font-semibold text-lg">Apakah GoBiz terintegrasi dengan GoFood?</span>
+            <svg id="icon-faq5" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
           </div>
         </button>
         <div id="faq5" class="hidden p-4 border-t border-gray-200">
-          <p class="text-gray-600">Ya, GoBiz terintegrasi langsung dengan banyak aplikasi besar seperti aplikasi yang disebutkan diatas . Anda bisa mengelola menu, pesanan, dan pendapatan dari GoFood langsung melalui aplikasi GoBiz.</p>
+          <p class="text-gray-600">Ya, GoBiz terintegrasi langsung dengan GoFood. Anda bisa mengelola menu, pesanan, dan pendapatan dari GoFood langsung melalui aplikasi GoBiz.</p>
         </div>
       </div>
 
@@ -95,7 +103,9 @@
   <script>
     function toggleFAQ(id) {
       const faq = document.getElementById(id);
+      const icon = document.getElementById(`icon-${id}`);
       faq.classList.toggle('hidden');
+      icon.classList.toggle('rotate-180');
     }
   </script>
 
