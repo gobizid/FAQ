@@ -80,10 +80,16 @@
       </div>
 
       <!-- FAQ 3 -->
-      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
-        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq3')">
-          <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold text-lg">Apakah saya perlu membayar untuk menggunakan GoBiz?</span>
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg overflow-hidden">
+        <button class="w-full text-left focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq3')">
+          <div class="flex justify-between items-center p-4">
+            <div class="flex items-center space-x-4">
+              <!-- Heroicon: Credit Card -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 2H4v2h12V6zM4 10v4h12v-4H4z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-800 font-semibold text-lg">Apakah saya perlu membayar untuk menggunakan GoBiz?</span>
+            </div>
             <svg id="icon-faq3" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
