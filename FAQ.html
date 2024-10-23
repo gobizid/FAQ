@@ -59,10 +59,16 @@
       </div>
 
       <!-- FAQ 2 -->
-      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg">
-        <button class="w-full text-left p-4 focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq2')">
-          <div class="flex justify-between items-center">
-            <span class="text-gray-800 font-semibold text-lg">Bagaimana cara mendaftar di GoBiz?</span>
+      <div class="bg-white border-l-4 border-blue-600 rounded-lg shadow-lg overflow-hidden">
+        <button class="w-full text-left focus:outline-none hover:bg-blue-50 transition-all duration-300" onclick="toggleFAQ('faq2')">
+          <div class="flex justify-between items-center p-4">
+            <div class="flex items-center space-x-4">
+              <!-- Heroicon: Clipboard List -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-blue-600" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9 2a1 1 0 00-1 1v1H7a2 2 0 000 4h6a2 2 0 100-4h-1V3a1 1 0 00-1-1H9zM7 6a1 1 0 010-2h6a1 1 0 110 2H7zm-3 2a2 2 0 00-2 2v7a2 2 0 002 2h12a2 2 0 002-2v-7a2 2 0 00-2-2H4zm1 4a1 1 0 012 0 1 1 0 01-2 0zm5-1a1 1 0 100 2h4a1 1 0 000-2H10zm-3 5a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-gray-800 font-semibold text-lg">Bagaimana cara mendaftar di GoBiz?</span>
+            </div>
             <svg id="icon-faq2" class="w-6 h-6 text-blue-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
             </svg>
