@@ -17,26 +17,44 @@
     body {
       font-family: 'Inter', sans-serif;
     }
+
+    @keyframes gradient-animation {
+      0% {
+        background: linear-gradient(to bottom right, #0591dc, #bee3f8);
+      }
+      50% {
+        background: linear-gradient(to bottom right, #30adfb, #075186);
+      }
+      100% {
+        background: linear-gradient(to bottom right, #4298c6, #2285be);
+      }
+    }
+    
+    body {
+      background-size: 200% 200%;
+    }
+    
   </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-blue-100 font-sans">
+<body class="bg-gradient-to-br font-sans" style="animation: gradient-animation 6s ease infinite;">
+
 
   <!-- Header -->
   <header class="bg-white shadow-md sticky top-0 z-10">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <div class="flex items-center space-x-4">
-        <a href="#" class="text-3xl font-semibold text-blue-600">GoBiz</a>
+        <a href="#" style="font-family: 'Poppins', sans-serif; font-weight: bold;" class="text-3xl text-black">GOBIZ.</a>
       </div>
       <div class="flex items-center space-x-6">
         <nav class="space-x-6">
-          <a href="#" class="text-gray-700 font-medium hover:text-blue-600">Home</a>
+          <!-- <a href="#" class="text-gray-700 font-medium hover:text-blue-600">Home</a>
           <a href="#" class="text-gray-700 font-medium hover:text-blue-600">Services</a>
           <a href="#" class="text-gray-700 font-medium hover:text-blue-600">Pricing</a>
-          <a href="#" class="text-gray-700 font-medium hover:text-blue-600">Contact</a>
+          <a href="#" class="text-gray-700 font-medium hover:text-blue-600">Contact</a> -->
         </nav>
         <div class="space-x-4">
-          <a href="#" class="px-5 py-2 bg-transparent border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Login</a>
-          <a href="#" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Daftar</a>
+          <!-- <a href="#" class="px-5 py-2 bg-transparent border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Login</a>
+          <a href="#" class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Daftar</a> -->
         </div>
       </div>
     </div>
@@ -44,7 +62,9 @@
 
   <!-- Main Content (FAQ Section) -->
   <div class="container mx-auto px-4 py-12">
-    <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions - GoBiz</h2>
+    <h2 style="font-family: 'Poppins', sans-serif;" class="text-5xl font-semibold text-center text-gray-800 mb-8">Frequently Asked Questions!</h2>
+
+
 
     <div class="max-w-3xl mx-auto space-y-4">
       <!-- FAQ 1 -->
