@@ -266,32 +266,36 @@
               <label for="phone" class="block text-sm font-medium text-gray-700">Handphone *</label>
               <input type="text" id="phone" name="phone" class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 p-3" placeholder="Nomor Handphone" required>
           </div>
-          
-          <!-- Pertanyaan -->
-          <div>
+
+          <!--Pertanyaan-->
+            <div>
               <label for="message" class="block text-sm font-medium text-gray-700">Pertanyaan *</label>
-              <textarea id="message" name="message" rows="4" class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 p-3" placeholder="Tulis pertanyaan Anda di sini..." required></textarea>
-          </div>
-          
-          <!-- Iklan -->
-          <div id="advertisement-container" class="mt-6 hidden relative flex items-start bg-gray-50 p-4 rounded-lg shadow-md">
-              <button id="close-ad" class="absolute top-2 right-2" style="width: 30px; height: 30px;">
-                  <span class="material-symbols-outlined text-gray-500 hover:text-gray-700 transition-all" style="font-size: 24px;">cancel</span>
+              <textarea id="message" name="message" rows="4" class="mt-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-orange-500 focus:border-orange-500 p-3" placeholder="Tulis pertanyaan Anda di sini..." required></textarea>          
+              <!-- Gambar iklan yang disembunyikan secara default -->
+              <div id="advertisement-container" class="mt-4 hidden relative flex items-start">
+                <button id="close-ad" class="" style="width: 30px; height: 30px; top: -10px;">
+                  <span class="material-symbols-outlined" style="font-size: 24px;">cancel</span>
               </button>
-              <img id="advertisement" src="/assets/img/image.png" alt="Iklan" class="max-w-xs h-auto rounded-md mr-4">
-              <div class="flex flex-col max-w-xs">
-                  <h2 class="text-lg font-semibold text-gray-800">For Your Information</h2>
-                  <p class="text-gray-600 mt-2 leading-relaxed italic">
-                      Frequently Asked Questions (FAQ) pada website memberikan informasi cepat tentang pertanyaan umum, meningkatkan pengalaman pengguna, dan mengurangi beban layanan pelanggan.
-                  </p>
-              </div>
-          </div>
-          
-          <!-- Submit Button -->
-          <button type="submit" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold py-3 px-4 rounded-md w-full shadow-md transition-all duration-300 ease-in-out transform hover:scale-105">
-              Kirim
-          </button>
-      </form>
+        
+                <div class="flex items-start"> <!-- Menggunakan flex untuk menyusun gambar dan teks secara horizontal -->
+                    <img id="advertisement" src="/assets/img/image.png" alt="Iklan" class="max-w-xs h-auto rounded-md mr-4"> <!-- Tambahkan margin-right untuk jarak -->
+                    <div class="flex flex-col">
+                      <h2 class="text-1xl font-semibold text-gray-800" style="font-family: 'Poppins', sans-serif;">For Your Information.</h2>
+                      <p class="text-black mt-2 italic leading-relaxed" style="font-family: 'Poppins', sans-serif; max-width: 400px;"> <!-- Tambahkan max-width dan leading-relaxed untuk spasi -->
+                          Frequently Asked Questions (FAQ) pada website memberikan informasi cepat tentang pertanyaan umum, meningkatkan pengalaman pengguna, dan mengurangi beban layanan pelanggan.
+                      </p>
+                  </div>
+                  
+                </div>
+            </div>
+            
+            
+            
+            
+            
+            
+            <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-md w-full">Kirim</button>
+        </form>
     
         
       
@@ -364,7 +368,7 @@
     </ul>
 </div>
 <!-- FOOTER SESSION END -->
- 
+
   <script>
     function toggleFAQ(id) {
       var faq = document.getElementById(id);
