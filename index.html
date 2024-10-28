@@ -59,6 +59,35 @@
   .blinking-button {
       animation: blink 1s infinite; /* Durasi 1 detik, loop terus menerus */
   }
+
+ /* Animasi teks */
+.animate-text {
+  animation: bounceText 1.5s infinite;
+}
+
+@keyframes bounceText {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.animate-move {
+  display: inline-block; /* Pastikan gambar dapat bergerak */
+  animation: moveImage 2s infinite alternate; /* Animasi gerakan */
+}
+
+@keyframes moveImage {
+  0% {
+      transform: translateX(0); /* Posisi awal */
+  }
+  100% {
+      transform: translateX(10px); /* Gerakan ke kanan */
+  }
+}
+
   </style>
 </head>
 <body class="font-sans" style="background: linear-gradient(to bottom right, #0591dc, #34a0a3); background-size: 400% 400%; animation: gradient-animation 6s ease infinite;">
@@ -249,7 +278,21 @@
         </div>
       </div>
     </div>
-    <p class="text-black mt-4 text-center" style="font-family: 'Poppins', sans-serif;">We offer support through questions, and the best way is to fill out the questions beside.</p>
+    <div class="flex items-center mt-4 relative">
+      <!-- Gambar yang bisa ditekan dan bergerak -->
+      <a href="/page/sec1.html" class="animate-move">
+          <img src="assets/img/question.482x512.png" alt="Support Image" class="w-24 h-24 mr-4 rounded-md">
+      </a>
+    
+      <!-- Animasi teks di samping gambar -->
+      <span class="animate-text absolute top-0 left-16 ml-4 text-black font-bold" style="font-family: 'Poppins', sans-serif;">
+          Ayo tanya aku!
+      </span>
+  </div>
+  
+  
+  </div>
+  
   </div>
 
 
